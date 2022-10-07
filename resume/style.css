@@ -8,6 +8,14 @@ body {
   color: #444;
 }
 
+/* container div - encompasses everything in body */
+#container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
 /* my name at top - now as a div */
 #name {
   color: #33485e;
@@ -21,10 +29,16 @@ body {
 }
 
 /* my current title */
-strong {
+#title {
   text-transform: uppercase;
   font-size: 1.5em;
   color: #33485e;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
 }
 
 /* section titles (education, experience, etc) */
@@ -35,9 +49,9 @@ strong {
   color: #ffffff;
   font-weight: 400;
   margin-top: 20px;
-  margin-bottom: 10px;
   margin-left: 0;
   margin-right: 0;
+  margin-top: 10px;
   width: 70%;
   min-width: 300px;
 }
@@ -63,18 +77,47 @@ strong {
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
-  /* question: why does the Codecademy format we learned (writing margins as margin: 2 0 0;) not work here? The spacing looks different.*/
+  /* question: why does the Codecademy format we learned (writing margins as margin: 2 0 0;) not work here? The spacing looks different when I try it that way. */
 }
 
 
-/* contact info, skills, and eduation */
+/* lists of contact info, skills, and eduation */
 ul {
   font-size: 1em;
 }
 
-/* container div - encompasses everything in body */
-#container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+/* job descriptions */
+.description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* contact information */
+.menu {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* ITEMS in contact information (email, linkedin, etc) */
+.menu li {
+  display: inline;
+}
+
+/* degrees list */
+#degrees {
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* skills section list */
+#do {
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
