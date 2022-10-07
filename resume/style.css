@@ -8,12 +8,16 @@ body {
   color: #444;
 }
 
-/* my name at top */
-h1 {
+/* my name at top - now as a div */
+#name {
   color: #33485e;
   font-size: 3em;
   text-transform: uppercase;
   text-align: center;
+  border-bottom: 1px solid #33485e;
+  width: 60%;
+  min-width: 300px;
+  margin: 0 auto;
 }
 
 /* my current title */
@@ -24,12 +28,18 @@ strong {
 }
 
 /* section titles (education, experience, etc) */
-h2 {
+.sectionheader {
   font-size: 1.5em;
   text-transform: uppercase;
   background-color: #33485e;
   color: #ffffff;
   font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 70%;
+  min-width: 300px;
 }
 
 /* job titles */
@@ -56,4 +66,9 @@ ul {
   font-size: 1em;
 }
 
-/* question: are the font-sizes needed when they repeat the body size? */
+/* container div - encompasses everything in body */
+#container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
