@@ -6,11 +6,17 @@
 h1 {
   font-family: Helvetica, sans-serif;
   font-size: 30px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
 }
 
 .article-text {
   font-family: Georgia, serif;
   font-size: 13px;
+  margins: 15px;
 }
 
 #byline {
@@ -24,6 +30,8 @@ blockquote {
   font-size: 20px;
   color: #355E3B;
   font-weight: bold;
+  padding: 15px;
+  text-align: center;
 }
 
 h2 {
@@ -38,11 +46,7 @@ h2 {
 
 a {
   color: #355E3B;
-}
-
-.article-images {
-  max-width: 900px;
-  height: auto;
+  font-weight: bold;
 }
 
 .hope-graphic-headline {
@@ -70,15 +74,21 @@ a {
   max-width: 900px;
   height:auto;
   margin: 15px;
-  border: 1px #f3f3f3 solid;
+  border: 2px #f3f3f3 solid;
   padding: 15px;
 }
 
 .image {
-  max-width: 900px;
+  max-width: 100%;
   height:auto;
   margin: 15px;
-  border: 1px #f3f3f3 solid;
+  border: 2px #f3f3f3 solid;
   padding: 15px;
-  display: block;
+}
+
+.caption {
+  font-family: Georgia; serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 12px;
 }
