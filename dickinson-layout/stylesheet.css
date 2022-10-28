@@ -2,3 +2,83 @@
   margin: 0 auto;
   width: 900px;
 }
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.article-text {
+  font-family: Georgia, serif;
+  font-size: 13px;
+}
+
+#byline {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+blockquote {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  color: #355E3B;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.readmore {
+  font-family: Georgia, serif;
+  font-size: 15px;
+}
+
+a {
+  color: #355E3B;
+}
+
+.article-images {
+  max-width: 900px;
+  height: auto;
+}
+
+.hope-graphic-headline {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  color: #355E3B;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chatter {
+  font-family: Georgia, serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+.source {
+  font-family: Georgia, serif;
+  font-size: 12px;
+  text-align: right;
+  font-style: italic;
+}
+
+#hope-gif {
+  max-width: 900px;
+  height:auto;
+  margin: 15px;
+  border: 1px #f3f3f3 solid;
+  padding: 15px;
+}
+
+.image {
+  max-width: 900px;
+  height:auto;
+  margin: 15px;
+  border: 1px #f3f3f3 solid;
+  padding: 15px;
+  display: block;
+}
