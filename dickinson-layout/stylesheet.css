@@ -3,6 +3,11 @@
   width: 900px;
 }
 
+#banner {
+  max-width: 100%
+}
+
+
 h1 {
   font-family: Helvetica, sans-serif;
   font-size: 30px;
@@ -16,7 +21,7 @@ img {
 .article-text {
   font-family: Georgia, serif;
   font-size: 13px;
-  margins: 15px;
+  margin: 15px;
 }
 
 #byline {
@@ -73,7 +78,7 @@ a {
 #hope-gif {
   max-width: 900px;
   height:auto;
-  margin: 15px;
+  margin: 30px;
   border: 2px #f3f3f3 solid;
   padding: 15px;
 }
@@ -81,7 +86,7 @@ a {
 .image {
   max-width: 100%;
   height:auto;
-  margin: 15px;
+  margin: 30px;
   border: 2px #f3f3f3 solid;
   padding: 15px;
 }
