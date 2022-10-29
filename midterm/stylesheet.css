@@ -1,0 +1,103 @@
+/*page-wrapper div: centers all the content*/
+#content {
+  margin: 0 auto;
+  width: 900px;
+}
+
+/*footballr banner*/
+#banner {
+  max-width: 100%;
+  margin: 15px;
+}
+
+/*story headline*/
+h1 {
+  font-family: Times, serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+}
+
+/*subheaders*/
+h2 {
+  font-family: Times, serif;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+}
+
+/*body text*/
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+img {
+  width: 100%;
+}
+
+/*big hero image of Megan + text at the top*/
+#hero-image {
+  width: 100%;
+  height: auto;
+}
+
+/*photo sources & photographer credit from SI story*/
+.source {
+  font-family: Times, serif;
+  font-size: 12px;
+  text-align: right;
+  font-style: italic;
+}
+
+/*all other article images besides hero and obviously banner*/
+.article-image {
+  max-width: 100%;
+  height: auto;
+  margin: 60px;
+  padding: 15px;
+}
+
+/*photo captions*/
+.caption {
+  font-family: Times, serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+
+blockquote {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #007c7c;
+  background-color: #f3f3f3;
+  width: 80%;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  margin: 50px auto;
+  font-style: italic;
+  border-left: 14px solid #007c7c;
+}
+
+#byline {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#read-more {
+  font-family: Times, serif;
+  font-size: 15px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+a {
+  color: #007c7c;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+}
