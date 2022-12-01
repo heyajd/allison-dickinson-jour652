@@ -1,6 +1,5 @@
 .container {
   max-width: 1000px;
-  width: 80%;
 }
 
 .main-content {
@@ -38,23 +37,32 @@ p {
 }
 
 .story-image-full-width {
+  max-width: 100%;
+  width:100%;
+  margin: 0 auto;
+  padding: 30px 0 0 0;
+}
+
+.story-image-harriett {
   width: 100%;
   margin: 0 auto;
   padding: 30px 0 0 0;
 }
 
-.story-image {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 30px 0 0 0;
-}
-
 /*image captions*/
-.caption {
+.large-image-caption {
   font-size: .75em;
   font-family: 'Assistant', sans-serif;
   text-align: left;
+  padding-left: 30px;
   color: #999FAC;
+ }
+
+.smaller-image-caption {
+   font-size: .75em;
+   font-family: 'Assistant', sans-serif;
+   text-align: center;
+   color: #999FAC;
  }
 
 h3 {
@@ -69,7 +77,7 @@ h3 {
  }
 
 .footer-box {
-   background-color: #e21833;
+   background-color: #C71E1D;
    color:#ffffff;
    padding: 10px 0 0 0;
    margin: 50px 0 0 0;
@@ -98,7 +106,7 @@ h3 {
 }
 
 .red {
-  color:#e21833;
+  color:#C71E1D;
 }
 
 .blockquote {
@@ -106,8 +114,8 @@ h3 {
   margin: 20px;
   font-family: 'Assistant', sans-serif;
   font-size: 2.5em;
-  font-weight: 600;
-  color: #e21833;
+  font-weight: 700;
+  color: #C71E1D;
 }
 
 .quote-attribution {
@@ -129,9 +137,8 @@ h3 {
   height: auto;
   width: 300px;
   padding: 40px;
-  position: absolute;
-  right: 0;
-  color: #000000;
+  position: fixed;
+  overflow:auto;
   background-color: #999FAC;
 }
 
@@ -139,7 +146,7 @@ h3 {
 .hero-container {
   position: relative;
   width: 100%;
-  background-color: #e21833;
+  background-color: #C71E1D;
   margin: 0 auto;
   padding: 20px;
   height: 200px;
@@ -179,13 +186,29 @@ h3 {
 }
 
 a:hover {
-  color:#000000;
+  background-color:#C71E1D;
+  color:#ffffff;
 }
 
 a:visited {
   color:orange;
 }
 
-a:normal {
-  color:#e21833;
+a {
+  color:#C71E1D;
+}
+
+/* media queries */
+@media (max-width:950px) {
+
+   .main-headline {
+     font-size: 3em;
+   }
+}
+
+@media (max-width:950px) {
+
+   .story-image-full-width {
+     width:950px;
+   }
 }
