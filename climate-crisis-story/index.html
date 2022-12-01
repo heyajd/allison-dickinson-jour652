@@ -13,24 +13,24 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 
 <!-- Google fonts stylesheets -->
-  <!--Montserrat - sans-serif-->
+  <!--Assistant - sans-serif-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!--Source Serif Pro - serif-->
+  <!--Lora - serif-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   </head>
   <body>
 
-<!-- commenting out Bootstrap Navbar -->
+<!-- commenting out Bootstrap Navbar
 
     <nav class="navbar navbar-expand-lg bg-dark">
       <span class="nav-top"><span class="red">Code Red</span>: Baltimore's Climate Divide
-</nav>
+</nav> -->
 
   <!-- Bootstrap Navbar end -->
 
@@ -38,29 +38,17 @@
 <!-- bootstrap grid start -->
 
 
-<!--commenting out Bootstrap JUMBOTRON
-<div class="px-4 py-5 my-5 text-center">
-  <h1 class="display-5 fw-bold">Centered hero</h1>
-  <div class="col-lg-6 mx-auto">
-    <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world's most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-      <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-      <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-    </div>
-  </div>
-</div>
-
-JUMBOTRON end-->
-
-
 <!-- Splash hero area! -->
 
 <div class="hero-container">
-  <img src="images/sonia-hug-streetview.jpg" class="hero-image" alt="Baltimore streetview">
 
+  <div class="main-headline"><span id="hed-black">Heat</span> & <span id="hed-emphasis">Inequality</span>
 
+    <div class="subheadline">In Baltimore, the burden of rising temperatures isn’t shared
 
+    </div>
 
+  </div>
 
 </div>
 
@@ -68,9 +56,15 @@ JUMBOTRON end-->
 
 
 <!--MAIN CONTENT DIV, responsive, gives gutters / constrains -->
+
+<img src="images/solomon-simmons.jpg" alt="Solomon Simmons in his East Baltimore home" class="story-image">
+<p class="caption">Solomon Simmons in his East Baltimore home (Photo by Amina Lampkin | University of Maryland)</p>
+
 <div class="container">
 
-<h1 id="headline">Heat and Inequality: In Baltimore, the burden of rising temperatures isn’t shared</h1>
+<div class="main-content">
+
+<h1 id="headline">In urban heat islands, climate crisis hits harder</h1>
 <p id="byline">Story by: Ian Round, Jazmin Conner, Jermaine Rowley and Sandy Banisky</p>
 
   <p>Heat radiates from the asphalt and concrete that cover the streets, the sidewalks, the alleys, even the tiny yards behind the homes in the East Baltimore neighborhood of McElderry Park. Trees are scarce. And air doesn’t move much when it comes up against block after block of rowhouses.</p>
@@ -91,10 +85,34 @@ JUMBOTRON end-->
 
   <p>More and more people, including Del. Robbyn Lewis, who represents parts of East Baltimore, are replacing the words “climate change” with stronger language.</p>
 
-<img src="images/melissa-candy.jpg" alt="Melissa Candy in a Baltimore neighborhood" class="story-image">
+</div>
+
+<div class="sidebar">
+  <p class="sidebar-header">State of the Climate 2018</p>
+  <p>The American Meteorological Society releases a State of the Climate report each summer summarizing data collected by global environmental monitoring stations around the world. In 2018, here were five key findings.</p>
+
+  <p>2018 was the fourth warmest year, behind only 2016, 2015 and 2017. Since the start of the 21st Century, every year has been hotter than the global average temperature recorded from 1981 to 2010.</p>
+
+  <p>Glaciers have continued to melt for the 30th year in a row. In 2018, approximately one meter of ice melted off the top of the average glacier.</p>
+
+  <p>Sea levels rose for the seventh year in a row. The annual mean sea level is the highest it’s been in 26 years.</p>
+
+  <p>The global average carbon dioxide concentration at Earth’s surface is the highest ever recorded according to data that goes back 800,000 years. Carbon dioxide, methane and nitrous oxide released in the atmosphere continue to increase.</p>
+
+  <p>Arctic air temperatures rose at twice the rate of the rest of the Earth with the five past years’ Arctic temperatures surpassing records since 1900.</p>
+
+  <p><i>Source: American Meteorological Society's <a href="https://www.ametsoc.org/ams/index.cfm/publications/bulletin-of-the-american-meteorological-society-bams/state-of-the-climate/">The State of the Climate in 2018</a></i></p>
+
+</div>
+
+<img src="images/melissa-candy.jpg" alt="Melissa Candy in a Baltimore neighborhood" class="story-image-full-width">
 <p class="caption">Melissa Canady says that the concrete block walls in her backyard prevent the flow of air and trap heat behind her house. (Photo by Maris Medina | University of Maryland)</p>
 
-<h2 class="chapter-headline">Urban Heat Islands</h2>
+<div class="container">
+
+  <div class="main-content">
+
+<h2 class="chapter-headline">Urban <span class="red">Heat</span> Islands</h2>
 
   <p>Cities, crowded and paved over, already feel the impact of climate change, with poorer air quality and streets, highways and bridges damaged by storms. But certain neighborhoods will continue to feel the effects of extreme temperatures more than others.</p>
 
@@ -114,6 +132,9 @@ JUMBOTRON end-->
 
   <p>This is true across the United States. In a majority of the country's most populous cities, people with lower incomes typically lived in the hottest areas, an investigation by journalists from NPR and the University of Maryland found.</p>
 
+<iframe class="chart" title="The relationship between summer temperatures and poverty in Baltimore" aria-label="Scatter Plot" id="datawrapper-chart-XYTZg" src="https://datawrapper.dwcdn.net/XYTZg/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+  </script>
+
   <p>In short, as the planet warms, the urban poor in dozens of large U.S. cities will actually experience more heat than the wealthy, simply by virtue of where they live.</p>
 
   <p>Sacoby Wilson, who studies applied environmental health as an associate professor at the University of Maryland School of Public Health, said people in low-income neighborhoods walk more, ride more buses and drive fewer cars — so they contribute less to climate change. And yet they are more vulnerable to dying in extreme heat.</p>
@@ -126,7 +147,7 @@ JUMBOTRON end-->
 
   <p>“We have to root ourselves in the reality that Baltimore for all this great history has a history of inequality and racism that we don’t like to talk about,” Baltimore City Council President Brandon M. Scott said.</p>
 
-<h2 class="chapter-headline">The Code Red weekend</h2>
+<h2 class="chapter-headline">The <span class="red">Code Red</span> weekend</h2>
 
   <p>As July’s weather emergency bore down, Baltimore’s health department put out press releases advising citizens to drink water and cut back on outdoor activities. At a Thursday press conference warning of a 100-degree weekend, the mayor told Baltimoreans to stay inside until the weather broke Monday night.</p>
 
@@ -143,6 +164,9 @@ JUMBOTRON end-->
 
   <p>In some homes, those readings showed that it was hotter inside than outside.</p>
 
+<iframe class="chart" title="Indoor and outdoor heat index during Baltimore heat wave, July 16-22, 2019" aria-label="Interactive line chart" id="datawrapper-chart-28JHJ" src="https://datawrapper.dwcdn.net/28JHJ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+
   <p>On the first floor of Tammy Jackson’s two-story rowhouse, the heat index registered 93 degrees at 10 p.m. on Sunday, July 21. Outside, the heat index was 9 degrees lower, 84 degrees.</p>
 
   <p>Stephanie Pingley said she won’t let her three sons — 13, 11 and 7 — play outside the home she rents in the 500 block of her street. “Drugs in the 400 block,” she said. “Drugs and alcohol in the 600 block.”</p>
@@ -151,7 +175,7 @@ JUMBOTRON end-->
 
   <p>Still, she said an air conditioner in the kitchen provides enough relief for the family during the day. She would rather stay home with the shades drawn against the heat than walk her children a mile to a cooling center.</p>
 
-<h2 class="chapter-headline">Security concerns</h2>
+<h2 class="chapter-headline"><span class="red">Security</span> concerns</h2>
 
   <p>Solomon Simmons, 70, and his neighbor Harriett Alexander said McElderry Park used to be more tightknit — “like a village,” Simmons said.</p>
 
@@ -160,9 +184,6 @@ JUMBOTRON end-->
   <p>Today, Simmons said, many of his old neighbors have died. Only about four people remain from the group of homeowners his mother met when she moved to McElderry Park in the 1980s.</p>
 
   <p>“Pride is gone,” he said.</p>
-
-<img src="images/solomon-simmons.jpg" alt="Solomon Simmons in his East Baltimore home" class="story-image">
-<p class="caption">Solomon Simmons in his East Baltimore home (Photo by Amina Lampkin | University of Maryland)</p>
 
   <p>He will not put an air-conditioning unit in a first-floor window facing the street “because of security.” He has air conditioning in his bedroom, but he’s mindful that using it costs money.</p>
 
@@ -196,13 +217,16 @@ JUMBOTRON end-->
 
   <p>Lewis said, “We wouldn’t need cooling centers if we had healthy neighborhoods.”</p>
 
-<h2 class="chapter-headline">Security concerns</h2>
+<h2 class="chapter-headline">Heading off <span class="red">catastrophe</span></h2>
 
   <p>Twenty people have died of heat-related illnesses in Maryland so far this year, three of them in Baltimore, according to state data through Aug. 28.</p>
 
   <p>From July 16 through July 22, when the heat wave broke, 47 people went to emergency rooms when the heat aggravated chronic conditions such as heart disease, diabetes or lung problems.</p>
 
   <p>Yet it could have been worse. Heat catastrophes are not theoretical. In Chicago in 1995, more than 700 people died during a five-day heat wave.</p>
+
+  <iframe class="chart" title="Heat-related deaths in Maryland and Baltimore" aria-label="Grouped Bars" id="datawrapper-chart-E4vpT" src="https://datawrapper.dwcdn.net/E4vpT/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="558" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+  </script>
 
   <p>And summer heat will get more extreme. With every year, researchers warn, temperatures will soar higher and the heat waves will last longer — putting more pressure on city governments to help residents cope.</p>
 
@@ -211,6 +235,8 @@ JUMBOTRON end-->
   <p>If no action is taken to reduce carbon emissions, by mid-century that figure will rise to more than 37 days annually, according to the researchers. The study defines mid-century as starting in 17 years.</p>
 
   <p>By the end of the century, as a baby born today becomes a senior citizen, there will be 65 days with a heat index of 100 degrees or higher, the researchers projected. That’s about the same number as McAllen, Texas, a city that abuts the Mexican border.</p>
+
+<iframe class="chart" title="Projected number of extreme heat events in Maryland for the year 2040" aria-label="Map" id="datawrapper-chart-fv1oo" src="https://datawrapper.dwcdn.net/fv1oo/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="417" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
 
   <p>Peter Beilenson, Baltimore’s health commissioner from 1992 to 2005, now the health services director of Sacramento County, California, said health departments could use different strategies to deal with extreme heat.</p>
 
@@ -224,7 +250,7 @@ JUMBOTRON end-->
 
   <p>“Being able to identify vulnerable areas [where people are especially endangered by heat] is very challenging,” she said. Also, “in a heat wave, everyone is at risk, including people who knock on doors.”</p>
 
-<h2 class="chapter-headline">Trees help with heat</h2>
+<h2 class="chapter-headline">Trees help with <span class="red">heat</span></h2>
 
   <p>When Baltimore officials are asked how the city is preparing for the more extreme temperatures ahead, several people point to the efforts by City Hall and volunteer groups to plant more trees. Citywide, the tree canopy in 2015 was 28%, up from 27% in 2007.</p>
 
@@ -240,7 +266,7 @@ JUMBOTRON end-->
 
   <p>At the end of July, Scott released an agenda with 26 priorities for the coming council year. Climate change was not among them.</p>
 
-<h2 class="chapter-headline">Rowhouses in the heat</h2>
+<h2 class="chapter-headline">Rowhouses in the <span class="red">heat</span></h2>
 
   <p>Rowhouses efficiently conserve heat — which is welcome in the winter, a problem in the summer.</p>
 
@@ -252,10 +278,14 @@ JUMBOTRON end-->
 
   <p>It’s the largest green space for blocks. But some neighbors said they are reluctant to walk their dogs there for fear they will step on syringes discarded by people who use drugs.</p>
 
+</div>
+
+<div class="container">
+
 <img src="images/amazing-grace-garden.jpg" alt="a green garden space in Baltimore" class="story-image">
 <p class="caption">The garden entrance at Amazing Grace Evangelical Lutheran Church is one of the few green spaces in the McElderry Park neighborhood. (Photo by Ian Round | University of Maryland)</p>
 
-<h2 class="chapter-headline">Coping with the heat</h2>
+<h2 class="chapter-headline">Coping with the <span class="red">heat</span></h2>
 
   <p>As temperatures in Baltimore reached 100 on July 20, most everyone around the city was staying inside. Some of the people on the streets walked under open umbrellas, carrying their own circle of shade. Men wore damp cloths draped under their caps or on the backs of their necks. No one was moving quickly.</p>
 
@@ -274,6 +304,9 @@ JUMBOTRON end-->
   <p>“Accept it,” he said.</p>
 
   <p><i>Jake Gluck, Jane Gerard, Roxanne Ready, Theresa Diffendal and Sean Mussenden of the University of Maryland contributed to this story. Additional information was also provided by Sean McMinn, Meg Anderson and Nora Eckert of NPR.</i></p>
+
+<!--end main-content div-->
+</div>
 
 
 <img src="images/sonia-hug-streetview.jpg" alt="an empty Baltimore street" class="story-image">
