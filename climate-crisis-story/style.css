@@ -36,8 +36,8 @@ p {
   padding: 10px 0 10px 0;
 }
 
-.story-image-full-width {
-  max-width: 100%;
+.story-image {
+  width: 100%;
   margin: 0 auto;
   padding: 30px 0 0 0;
 }
@@ -94,6 +94,7 @@ h3 {
 .chart {
   margin: 20px;
   padding: 20px;
+  max-width: 100%;
 }
 
 /* skinny top nav bar with Code Red */
@@ -128,17 +129,21 @@ h3 {
 .sidebar-header {
   font-size: 1.5em;
   font-weight: 700;
-  font-family: 'Assistant', sans-serif;
+  font-family: 'Lora', serif;
   text-align: center;
+  color: #000;
 }
 
 .sidebar {
-  height: auto;
-  width: 300px;
-  padding: 40px;
-  position: fixed;
-  overflow:auto;
-  background-color: #999FAC;
+  padding: 15px;
+  margin: 15px;
+  background-color: #D3D3D3;
+  border-top: 35px solid #c71e1d;
+}
+
+.sidebar-text {
+  color: #000;
+  font-family: 'Assistant', sans-serif;
 }
 
 /* hero/splash area */
@@ -149,10 +154,6 @@ h3 {
   margin: 0 auto;
   padding: 20px;
   height: 200px;
-}
-
-.hero-image {
-  width:100%;
 }
 
 .main-headline {
@@ -185,12 +186,11 @@ h3 {
 }
 
 a:hover {
-  background-color:#C71E1D;
-  color:#ffffff;
+  color:#C71E1D;
 }
 
 a:visited {
-  color:orange;
+  color:darkgreen;
 }
 
 a {
@@ -202,12 +202,5 @@ a {
 
    .main-headline {
      font-size: 3em;
-   }
-}
-
-@media (max-width:950px) {
-
-  .story-image-full-width {
-     width:650px;
    }
 }
