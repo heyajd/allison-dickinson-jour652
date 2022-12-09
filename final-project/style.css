@@ -27,7 +27,8 @@
 }
 
 .main-content {
-  max-width: 80%;
+  margin: 0 auto;
+  width: 70%;
 }
 
 #headline {
@@ -88,25 +89,6 @@ h3 {
    font-family: 'Montserrat', sans-serif;
  }
 
- .row {
-   padding: 30px 0 0 0;
- }
-
-.column-box {
-  background-color: #ECECEC;
-  opacity: .5;
-  margin:0 15px 0 15px;
-  padding: 10px;
-  margin: 0 auto;
-}
- .column-text {
-   font-family: 'Montserrat', sans-serif;
-   font-weight: 500;
-   color: #000;
-   padding: 10px;
-   font-size: 1em;
- }
-
  .footer-box {
    background-color: #ADB2BC;
    padding: 10px 0 0 0;
@@ -136,7 +118,7 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
   font-weight: 400;
-  color: #ADB2BC;
+  color: #8B90A2;
   margin: 0 auto;
   padding: 10px;
 }
@@ -152,8 +134,12 @@ h3 {
   font-size: 1em;
   font-style: italic;
   text-align: right;
-  color: #999FAC;
+  color: #8B90A2;
 }
+
+
+
+
 /* media queries */
 @media (max-width:950px) {
 
