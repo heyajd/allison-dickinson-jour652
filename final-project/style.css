@@ -1,6 +1,13 @@
-body {
-  margin: 0;
-  padding: 0;
+/* section: hero/splash */
+.hero-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.hero-image {
+  width: 100%;
 }
 
 .overlay {
@@ -25,40 +32,22 @@ body {
   font-size: 1.8em;
   color: #000;
 }
+/* end of hero/splash section */
 
-.hero-container {
-  width: 100%;
-  margin-bottom: 20px;
-  margin-top: 0;
-}
-
-.hero-image {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
 
 .main-content {
   margin: 0 auto;
   width: 70%;
 }
 
-#headline {
-  font-size: 2.4em;
-  font-weight: 700;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-}
-
 #byline {
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
 
 /*basic body paragraphs*/
-
 p {
   font-family: 'Source Serif Pro', serif;
   line-height: 180%;
@@ -79,28 +68,29 @@ ul {
   padding: 10px 0 10px 0;
 }
 
-img {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 30px 0 0 0;
+/* section: story images */
+.image-div {
+  margin: 30px 0 40px 0;
 }
 
-/*image captions*/
+.story-image {
+  width:100%;
+  margin: 0 auto;
+}
+
 .caption {
-  font-size: .8em;
+  font-size: .85em;
   font-family: 'Montserrat', sans-serif;
   text-align: left;
   padding-left: 15px;
   color: #999FAC;
  }
 
-h3 {
-   font-size: 1.5em;
-   font-weight: 500;
-   text-align: left;
-   font-family: 'Montserrat', sans-serif;
- }
 
+/* end of story images section */
+
+
+/* section: footer */
  .footer-box {
    background-color: #ADB2BC;
    width: 100%;
@@ -115,32 +105,36 @@ h3 {
    margin: 20px 0 0 0;
    text-align: center;
  }
+/* end of footer section */
 
- iframe {
-   max-width: 100%;
-   margin: 0 auto;
-}
 
 /*for datawrapper chart*/
 .chart {
-  margin: 20px;
-  padding: 20px;
+  padding: 25px 20px 25px 20px;
+  padding: 25px 20px 25px 20px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
+/*YouTube video*/
+.video-embed {
+  margin: 30px 0 30px 0;
+}
+
+/*section: pull quotes*/
 .blockquote {
+  border-top: #CF2C2C solid 2px;
+  border-bottom: #CF2C2C solid 2px;
+  margin: 40px 20px 40px 20px;
+  padding: 10px;
+}
+
+.quote-text {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
-  font-weight: 400;
-  color: #BD1920;;
+  font-weight: 500;
+  color: #CF2C2C;
   margin: 0 auto;
-  padding: 15px;
-  margin: 10px;
-}
-
-.pull-quote-border {
-  border-top:#8B90A2 4px;
-  border-bottom:#8B90A2 4px;
-  margin: 20px;
 }
 
 .quote-attribution {
@@ -150,6 +144,7 @@ h3 {
   text-align: right;
   color: #8B90A2;
 }
+/*end of pull quote section*/
 
 
 /* media queries */
@@ -158,4 +153,44 @@ h3 {
    #main-headline {
      font-size: 3em;
    }
+
+   #main-subhed {
+     font-size: 1.6em;
+   }
 }
+
+@media (max-width:900px) {
+
+   #main-headline {
+     font-size: 2.4em;
+   }
+
+   #main-subhed {
+     font-size: 1.4em;
+   }
+}
+
+@media (max-width:650px) {
+
+   #main-headline {
+     font-size: 1.6em;
+   }
+
+   #main-subhed {
+     font-size: 1.3em;
+   }
+}
+
+@media (max-width:580px) {
+
+   #main-headline {
+     font-size: 1.4em;
+   }
+
+   #main-subhed {
+     font-size: 1.1em;
+   }
+}
+
+
+/* end of media queries */
