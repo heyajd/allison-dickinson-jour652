@@ -47,11 +47,16 @@
   text-align: center;
 }
 
-/*basic body paragraphs*/
+/* basic body paragraphs */
 p {
   font-family: 'Source Serif Pro', serif;
   line-height: 180%;
   font-size: 1.1em;
+}
+
+/* links */
+a {
+  color: #CF2C2C;
 }
 
 ul {
@@ -66,11 +71,12 @@ ul {
   text-align: left;
   font-family: 'Montserrat', sans-serif;
   padding: 10px 0 10px 0;
+  color: #000;
 }
 
 /* section: story images */
 .image-div {
-  margin: 30px 0 40px 0;
+  margin: 50px 0 50px 0;
 }
 
 .story-image {
@@ -83,43 +89,74 @@ ul {
   font-family: 'Montserrat', sans-serif;
   text-align: left;
   padding-left: 15px;
-  color: #999FAC;
+  color: #6B7385;
  }
-
-
 /* end of story images section */
 
 
-/* section: footer */
- .footer-box {
-   background-color: #ADB2BC;
-   width: 100%;
-   padding: 10px 0 0 0;
-   margin: 50px 0 0 0;
- }
-
- .footer-text {
-   font-size: .8em;
-   font-family: 'Source Serif Pro', serif;
-   padding: 10px 20px 20px 10px;
-   margin: 20px 0 0 0;
-   text-align: center;
- }
-/* end of footer section */
-
-
-/*for datawrapper chart*/
+/* for datawrapper charts and storymapjs*/
 .chart {
-  padding: 25px 20px 25px 20px;
-  padding: 25px 20px 25px 20px;
+  padding: 40px 0 40px 0;
   max-width: 100%;
   margin: 0 auto;
 }
 
-/*YouTube video*/
-.video-embed {
-  margin: 30px 0 30px 0;
+/* section: YouTube video */
+.video-container {
+  margin: 50px 0 50px 0;
 }
+
+  /* big big thanks to Zach from howchoo.com for the responsive code here! */
+    .embed-youtube {
+      position: relative;
+      padding-bottom: 56.25%; /* - 16:9 aspect ratio (most common) */
+      /* padding-bottom: 62.5%; - 16:10 aspect ratio */
+      /* padding-bottom: 75%; - 4:3 aspect ratio */
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .embed-youtube iframe,
+    .embed-youtube object,
+    .embed-youtube embed {
+        border: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+  /* thanks again Zach; code via howchoo.com/webdev/how-to-make-youtube-videos-responsive-without-js */
+
+/* end of video section */
+
+/* section: findings text boxes */
+
+.column-boxes {
+  background-color: #CACDD3;
+  color: #000;
+  padding: 5px;
+  margin: 5px;
+}
+
+.centered-column {
+  background-color: #CACDD3;
+  color: #000;
+  padding: 5px;
+  margin: 5px 5px 40px 5px;
+}
+
+.box-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  margin: 15px;
+}
+
+.box-bold {
+  font-weight: 600;
+}
+/* end of text boxes section */
 
 /*section: pull quotes*/
 .blockquote {
@@ -142,12 +179,30 @@ ul {
   font-size: 1em;
   font-style: italic;
   text-align: right;
-  color: #8B90A2;
+  color: #6B7385;
 }
 /*end of pull quote section*/
 
+/* section: footer */
+ .footer-box {
+   background-color: #6B7385;
+   width: 100%;
+   padding: 10px 0 0 0;
+   margin: 50px 0 0 0;
+ }
 
-/* media queries */
+ .footer-text {
+   font-size: .8em;
+   font-family: 'Source Serif Pro', serif;
+   padding: 10px 20px 20px 10px;
+   margin: 20px 0 0 0;
+   text-align: center;
+   color: white;
+ }
+/* end of footer section */
+
+
+/* section: media queries */
 @media (max-width:1100px) {
 
    #main-headline {
@@ -157,6 +212,7 @@ ul {
    #main-subhed {
      font-size: 1.6em;
    }
+
 }
 
 @media (max-width:900px) {
@@ -179,6 +235,14 @@ ul {
    #main-subhed {
      font-size: 1.3em;
    }
+
+   .quote-text {
+     font-size: 1em;
+   }
+
+   .quote-attribution {
+     font-size: .8em;
+   }
 }
 
 @media (max-width:580px) {
@@ -192,5 +256,4 @@ ul {
    }
 }
 
-
-/* end of media queries */
+/* end of media queries section */
